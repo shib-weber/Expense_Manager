@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+}
+
+.calendar {
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.weekdays,
+.days {
+    color: #f4f4f4;
+    background-color: #2b6e1796;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.days div {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.days div:hover {
+    background-color: #f4f4f4;
+    color: #2b6e17;
+}
+
+#prev,
+#next {
+    width: 45px;
+    height: 30px;
+    border-radius: 1rem;
+    background-color: #2b6e1796;
+}
+
+#monthYear {
+    color: #2b6e17;
+}
+
+.goto {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.goto input {
+    text-align: center;
+    color: #2b6e17;
+    font-size: 32px;
+    width: 80%;
+    height: 95%;
+    outline: none;
+}
+
+.go {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b6e1796;
+    color: white;
+}
+
+.homeT {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b6e1796;
+    gap: 1rem;
+}
+
+#home,
+#today {
+    background-color: white;
+    color: #282c34;
+    width: 100px;
+    height: 30px;
+    border-radius: 1rem;
+}
+
+#tday {
+    background-color: #a18902;
+}
+@media(max-width:600px){
+    html, body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .calendar{
+        width: 350px;
+    }
+}

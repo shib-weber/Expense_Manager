@@ -1,0 +1,280 @@
+body {
+	font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #282c34;
+  }
+  .nab{
+    width: 100%;
+    height: 5vh;
+    background-color: #2b6e17;
+    color: white;
+    padding: 2rem 0 2rem 2rem;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .nls{
+    display: flex;
+    gap: 2rem;
+  }
+  .forlogout{
+    height: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #openlogout:hover {
+    cursor: pointer;
+  }
+  .name{
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+  }
+  .logout{
+    width: 25%;
+    height: 0px;
+    text-align: center;
+    background-color: white;
+    color: #2b6e17;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  .logouts{
+    visibility: visible;
+    height: 30px;
+    color: #282c34;
+  }
+  #planning{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  #prev, #next {
+    height: 30px;
+    width: 100px;
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+  }
+  #app {
+  position: relative;
+  top: 2rem;
+	width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+	margin: 0 auto;
+	text-align: center;
+  background-color: #2b6e17;
+  }
+  .dtpn{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0.3rem;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    border-radius: 1rem;
+  }
+  .sgfmt{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    background-color: transparent;
+  }
+  .ml, .mt{
+    width: 10%;
+    height: 100%;
+    background-color: transparent;
+    text-wrap: wrap;
+    word-break:normal;
+    color: white;
+  }
+  .dt{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0.3rem;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(2, 48, 2, 0.514);
+    border-radius: 1rem;
+  }
+  form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #amount, #description, #category {
+    color: black;
+    outline: none;
+    word-wrap: break-word;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  #sbt{
+    width: 20%;
+    height: 55%;
+  }
+  .expw{
+    padding: 2rem 2rem 0 2rem;
+    position: relative;
+    top: 3rem;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-wrap:wrap;
+    color:black;
+    background-color: #2b6e17;
+  }
+  #expense-list{
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
+    top: -1rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-wrap:wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color:black;
+    background-color:transparent;
+  }
+  .listt{
+    padding: 1%;
+    display: flex;
+    gap: 1rem;
+    background-color: rgba(1, 32, 1, 0.514);
+    border-radius: 1rem;
+    width: 95%;
+    height: auto;
+  }
+  .amt, .des, .cat{
+    color: white;
+    background-color: transparent;
+    word-break: break-all;
+    text-wrap: wrap;
+    height: auto;
+    width: 28%;
+  }
+  .del, .tt {
+    display: flex;
+    color: white;
+    width: 10%;
+  }
+  #delbt{
+    border-radius: 0.5rem;
+    background-color: red;
+  }
+  .cd{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  @media (max-width: 600px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .nab {
+      justify-content: center;
+      align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+    #calender{
+      margin-left: -3rem;
+      scale: 0.8;
+    }
+    .name {
+        font-size: medium;
+    }
+    .nls{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #planning{
+      scale: 0.8;
+    }
+    #app{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .dtpn, .sgfmt {
+      width: 100%;
+    }
+    .sgfmt{
+      display: flex;
+      gap: 1rem;
+    }
+    #expense-form{
+      gap: 0.4rem;
+      margin-left: -2rem;
+    }
+    .mt{
+      height: 60px;
+      width: 100px;
+    }
+    #sbt{
+      word-break: break-all;
+    }
+    .expw{
+      width: 90%;
+      padding: 1rem 1rem 0 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .listt{
+      width: 100%;
+      gap: 0.5rem;
+    }
+    .amt, .cat, .des {
+      width: 70px;
+    }
+}

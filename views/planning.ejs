@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning</title>
+    <link rel="stylesheet" href="planningst.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="name">
+            <%= name %>
+        </div>
+        (<div class="dt">
+            <%= dateString %>
+        </div>)
+    </div>
+    <form id="planner">
+        <label for="monthly income">Set Your Monthly Income</label>
+        <input id="limit" type="number" name="Limit" placeholder="Income" required>
+        <button type="submit" id="sbt">Set Plan</button>
+    </form>
+
+    <div class="plans">
+        <div class="Incomes">Incomes
+            <% cuser.forEach(user => { %>
+                <div class="Ili">
+                    <div class="amt">
+                        <%= user.amount %>
+                    </div>
+                    <div class="cat">
+                        <%= user.category %>
+                    </div>
+                    <div class="del" id='delbt' onclick="deleteExpense(`<%= user._id %>`)">Delete</div>
+                </div>
+                <% }) %>
+        </div>
+        <div class="monthG">Your This Month's Income: Rs.
+            <div class="mGv">
+                <%= Limit %>
+            </div>
+        </div>
+        <div class="monthG">Your This Month's Expense : Rs.
+            <div class="mEv">
+                <%= expenditure %>
+            </div>
+        </div>
+        <div class="monthS">Month's Current Savings: Rs.
+            <div class="mSv">
+                <%= savings %>
+            </div>
+        </div>
+    </div>
+    <canvas id="pieChart" width="400" height="400"></canvas>
+    <script src="planningjs.js"></script>
+</body>
+
+</html>
